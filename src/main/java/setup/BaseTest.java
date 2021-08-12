@@ -3,6 +3,7 @@ package setup;
 import io.appium.java_client.AppiumDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.*;
+import pageObjects.NativeIndexPage;
 import pageObjects.PageObject;
 import setup.IDriver;
 import setup.IPageObject;
@@ -17,6 +18,7 @@ public class BaseTest implements IDriver {
 
     private static AppiumDriver appiumDriver; // singleton
     private static IPageObject po;
+    protected static  NativeIndexPage nativeIndexPage;
     @Override
     public AppiumDriver getDriver() { return appiumDriver; }
 
@@ -30,6 +32,7 @@ public class BaseTest implements IDriver {
         System.out.println("Before: app type - "+appType);
         setAppiumDriver(platformName, deviceName, browserName, app);
         setPageObject(appType, appiumDriver);
+        nativeIndexPage = (NativeIndexPage) ((PageObject) getPo()).getActivePageObject();
     }
 
     @AfterMethod(alwaysRun = true)

@@ -1,0 +1,27 @@
+# Created at 2021-08-13T01:37:24.729
+WARNING: An illegal reflective access operation has occurred
+
+# Created at 2021-08-13T01:37:24.730
+WARNING: Illegal reflective access by net.sf.cglib.core.ReflectUtils$1 (file:/C:/Users/websafari/.m2/repository/cglib/cglib/3.2.12/cglib-3.2.12.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)
+
+# Created at 2021-08-13T01:37:24.731
+WARNING: Please consider reporting this to the maintainers of net.sf.cglib.core.ReflectUtils$1
+
+# Created at 2021-08-13T01:37:24.732
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+
+# Created at 2021-08-13T01:37:24.747
+WARNING: All illegal access operations will be denied in a future release
+
+# Created at 2021-08-13T01:37:30.547
+Warning: Parameter not found: enable_new_segsearch
+
+# Created at 2021-08-13T01:37:30.548
+Error: LSTM requested, but not present!! Loading tesseract.
+
+# Created at 2021-08-13T01:37:31.092
+Warning: Invalid resolution 0 dpi. Using 70 instead.
+
+# Created at 2021-08-13T01:37:31.496
+Estimating resolution as 514
+

@@ -1,0 +1,13 @@
+setup\IDriver.class
+pageObjects\WebPageObject.class
+setup\BaseTest.class
+setup\IPageObject.class
+pageObjects\NativeRegistrationPage.class
+utils\WebElementChecker.class
+pageObjects\BasePage.class
+utils\ScreenshotReader.class
+pageObjects\NativeBudgetPage.class
+utils\PropertyReader.class
+pageObjects\PageObject.class
+pageObjects\NativeIndexPage.class
+utils\TestDataProvider.class

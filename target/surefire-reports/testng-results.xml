@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="1" total="3" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-08-13T01:37:02 MSK" name="Native mobile testing Suite" finished-at="2021-08-13T01:38:15 MSK" duration-ms="72819">
+    <groups>
+      <group name="native">
+        <method signature="nativeMobileTests.checkIncorrectAppearAutoCompleteTextView(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:scenarios.nativeMobileTests@dd0c991]" name="checkIncorrectAppearAutoCompleteTextView" class="scenarios.nativeMobileTests"/>
+        <method signature="nativeMobileTests.checkRegistrationAndSignIn(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:scenarios.nativeMobileTests@dd0c991]" name="checkRegistrationAndSignIn" class="scenarios.nativeMobileTests"/>
+      </group> <!-- native -->
+    </groups>
+    <test started-at="2021-08-13T01:37:02 MSK" name="Native tests" finished-at="2021-08-13T01:38:15 MSK" duration-ms="72819">
+      <class name="scenarios.nativeMobileTests">
+        <test-method is-config="true" signature="setUp(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:scenarios.nativeMobileTests@dd0c991]" started-at="2021-08-13T01:37:02 MSK" name="setUp" finished-at="2021-08-13T01:37:24 MSK" duration-ms="21909" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Android]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[native]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[cd7e5bc]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[./src/main/resources/EPAMTestApp.apk]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="checkIncorrectAppearAutoCompleteTextView(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:scenarios.nativeMobileTests@dd0c991]" started-at="2021-08-13T01:37:24 MSK" name="checkIncorrectAppearAutoCompleteTextView" description="Check appearance AutoCompleteTextView" data-provider="wrongDataForNative" finished-at="2021-08-13T01:37:32 MSK" duration-ms="7702" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[wrong@mail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Ivanovwrong]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[wrong12345678]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkIncorrectAppearAutoCompleteTextView -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:scenarios.nativeMobileTests@dd0c991]" started-at="2021-08-13T01:37:32 MSK" name="tearDown" finished-at="2021-08-13T01:37:33 MSK" duration-ms="687" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:scenarios.nativeMobileTests@dd0c991]" started-at="2021-08-13T01:37:33 MSK" name="setUp" finished-at="2021-08-13T01:37:54 MSK" duration-ms="21268" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Android]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[native]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[cd7e5bc]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[./src/main/resources/EPAMTestApp.apk]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="checkRegistrationAndSignIn(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:scenarios.nativeMobileTests@dd0c991]" started-at="2021-08-13T01:37:54 MSK" name="checkRegistrationAndSignIn" description="Check registration and sign in android application" data-provider="dataForNative" finished-at="2021-08-13T01:38:15 MSK" duration-ms="20660" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[web@mail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Ivanov]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[12345678]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Budget]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkRegistrationAndSignIn -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:scenarios.nativeMobileTests@dd0c991]" started-at="2021-08-13T01:38:15 MSK" name="tearDown" finished-at="2021-08-13T01:38:15 MSK" duration-ms="506" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- scenarios.nativeMobileTests -->
+    </test> <!-- Native tests -->
+  </suite> <!-- Native mobile testing Suite -->
+</testng-results>
