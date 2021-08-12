@@ -3,7 +3,11 @@ package setup;
 import io.appium.java_client.AppiumDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.*;
+import pageObjects.NativeIndexPage;
 import pageObjects.PageObject;
+import setup.IDriver;
+import setup.IPageObject;
+import utils.ScreenshotReader;
 
 import java.io.File;
 import java.net.MalformedURLException;
@@ -13,8 +17,8 @@ import java.util.concurrent.TimeUnit;
 public class BaseTest implements IDriver {
 
     private static AppiumDriver appiumDriver; // singleton
-    IPageObject po;
-
+    private static IPageObject po;
+    protected static  NativeIndexPage nativeIndexPage;
     @Override
     public AppiumDriver getDriver() { return appiumDriver; }
 
@@ -23,15 +27,15 @@ public class BaseTest implements IDriver {
     }
 
     @Parameters({"platformName","appType","deviceName","browserName","app"})
-    @BeforeSuite(alwaysRun = true)
+    @BeforeMethod(alwaysRun = true)
     public void setUp(String platformName, String appType, String deviceName, @Optional("") String browserName, @Optional("") String app) throws Exception {
         System.out.println("Before: app type - "+appType);
         setAppiumDriver(platformName, deviceName, browserName, app);
         setPageObject(appType, appiumDriver);
-
+        nativeIndexPage = (NativeIndexPage) ((PageObject) getPo()).getActivePageObject();
     }
 
-    @AfterSuite(alwaysRun = true)
+    @AfterMethod(alwaysRun = true)
     public void tearDown() throws Exception {
         System.out.println("After");
         appiumDriver.closeApp();
@@ -62,6 +66,4 @@ public class BaseTest implements IDriver {
     private void setPageObject(String appType, AppiumDriver appiumDriver) throws Exception {
         po = new PageObject(appType, appiumDriver);
     }
-
-
 }
